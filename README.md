@@ -8,19 +8,21 @@ Project template for data scientists who works with project development using py
 ./setup.sh
 ```
 
-Renomeie `src/project_name/` para o nome do seu pacote e ajuste `pyproject.toml`
-(`[project].name`), `README.md` e `CLAUDE.md` de acordo.
+Ajuste `pyproject.toml` (`[project].name`) e `CLAUDE.md` (comandos, guardrails)
+para o projeto real. A estrutura de `src/` (subpastas, módulos) só deve ser
+criada quando o formato do projeto pedir — ver `arquitetura-projeto.md` nas
+regras globais (ML clássico vs. pipeline híbrido).
 
 ## Estrutura
 
 ```
-src/project_name/   # código do pacote (data/features/models/evaluation)
-tests/               # espelha src/
-configs/             # hiperparâmetros e paths de experimento (YAML)
-data/                # raw/interim/processed/external — raw é somente leitura
-models/              # artefatos treinados
-notebooks/           # exploração — nunca fonte de verdade
-reports/figures/     # saídas geradas para relatórios
+experimenting/       # EDA, scripts exploratórios e testes iniciais
+src/                  # código do pacote (import src) — cresce conforme o projeto pede
+tests/                # espelha src/
+configs/              # hiperparâmetros e paths de experimento (YAML)
+data/                 # input/ (dado bruto) e output/ (resultado gerado)
+models/               # artefatos treinados
+reports/figures/      # saídas geradas para relatórios
 ```
 
 ## Uso

@@ -5,15 +5,11 @@ __pycache__/
 .aider*
 *.egg-info/
 
-# Cookiecutter Data Science — dado versionado só via .gitkeep
-data/raw/*
-!data/raw/.gitkeep
-data/interim/*
-!data/interim/.gitkeep
-data/processed/*
-!data/processed/.gitkeep
-data/external/*
-!data/external/.gitkeep
+# Dado versionado só via .gitkeep
+data/input/*
+!data/input/.gitkeep
+data/output/*
+!data/output/.gitkeep
 models/*
 !models/.gitkeep
 
