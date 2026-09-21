@@ -2,5 +2,25 @@
 __pycache__/
 *.pyc
 .env
-data/
 .aider*
+*.egg-info/
+
+# Cookiecutter Data Science — dado versionado só via .gitkeep
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/external/*
+!data/external/.gitkeep
+models/*
+!models/.gitkeep
+
+# Claude Code — estado de sessão/local, não é do projeto
+.claude/worktrees/
+.claude/settings.local.json
+
+# settings.json de projeto (hooks compartilhados pela equipe) —
+# exceção a qualquer regra de *.json acima
+!.claude/settings.json
