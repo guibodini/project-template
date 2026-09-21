@@ -22,7 +22,6 @@ tests/                # espelha src/
 configs/              # hiperparâmetros e paths de experimento (YAML)
 data/                 # input/ (dado bruto) e output/ (resultado gerado)
 models/               # artefatos treinados
-reports/figures/      # saídas geradas para relatórios
 ```
 
 ## Uso
